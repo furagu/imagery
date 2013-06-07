@@ -1,0 +1,30 @@
+{
+  "name": "imagery",
+  "version": "0.0.0",
+  "description": "Simple image upload handler, resizer and storage designed to serve as a backend to webserver with image on-the-fly resizing functionality.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/furagu/imagery.git"
+  },
+  "keywords": [
+    "image",
+    "resize",
+    "storage"
+  ],
+  "author": "Egor Balyshev",
+  "license": "BSD",
+  "dependencies": {
+    "gm": ">1.8.0 <2.0.0",
+    "mkdirp": "0.3.x",
+    "formidable": "1.x.x"
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "91e36f1ccded22dff6bf64e1f188261b93222579",
+  "bugs": {
+    "url": "https://github.com/furagu/imagery/issues"
+  }
+}
