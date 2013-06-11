@@ -20,7 +20,8 @@
   "dependencies": {
     "gm": ">1.8.0 <2.0.0",
     "mkdirp": "0.3.x",
-    "formidable": "1.x.x"
+    "formidable": "1.x.x",
+    "underscore": "1.x.x"
   },
   "readmeFilename": "README.md",
   "gitHead": "91e36f1ccded22dff6bf64e1f188261b93222579",

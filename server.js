@@ -4,10 +4,9 @@ var
     sys = require('sys'),
     formidable = require('formidable'),
     util = require('util'),
-    conf = {
-        port: 8500,
-        trusted: ['127.0.0.1'],
-    }
+    conf = require('./config.js')
+
+require('./lib/http_extentions')(http)
 
 var server = http.createServer(function (req, res) {
     sys.puts('url ' + req.url)
@@ -46,6 +45,7 @@ function serveUploadForm(req, res) {
 
 function handleUpload(req, res) {
     parseUploadRequest(req, function(err, fields, files) {
+        // TODO: handle errors
         res.writeHead(200, {'content-type': 'text/plain'})
         res.write('received upload:\n\n')
         res.write(util.inspect([fields, files]))
